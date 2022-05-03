@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app1:
+    build: ./ # caminho para o Dockerfile
+    ports:
+      - "8080:8080" # porta que voce configurou no Dockerfile
+    volumes:
+      - .:/usr/src/timer
+
+    command: npm start # comando que ira executar assim que subir o container
+
