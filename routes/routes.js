@@ -1,6 +1,6 @@
-import express from "express";
-import signupRoute from "./signupRoute.js";
-import signinRoute from "./SigninRoute.js";
+const express = require("express");
+const signupRoute = require("./SignupRoute.js");
+const signinRoute = require("./SigninRoute.js");
 
 const routes = (app) => {
   app.route("/").get((req, res) => {
@@ -10,4 +10,4 @@ const routes = (app) => {
   app.use(express.json(), signupRoute, signinRoute);
 };
 
-export default routes;
+module.exports = routes;

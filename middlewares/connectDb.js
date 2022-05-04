@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import dotenv from "dotenv";
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -14,4 +14,4 @@ mongoose.connection.on("error", (error) =>
   console.log("Failed to connect DB" + error)
 );
 
-export default db;
+module.exports = db;

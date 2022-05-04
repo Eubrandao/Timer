@@ -1,7 +1,7 @@
-import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
-import dotenv from "dotenv";
-import UserModel from "../models/UserModel.js";
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const dotenv = require("dotenv");
+const UserModel = require("../models/UserModel");
 dotenv.config();
 
 class Signin {
@@ -40,4 +40,4 @@ class Signin {
   };
 }
 
-export default Signin;
+module.exports = Signin;

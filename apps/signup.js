@@ -1,5 +1,5 @@
-import UserModel from "../models/UserModel.js";
-import bcrypt from "bcrypt";
+const UserModel = require("../models/UserModel.js");
+const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 class Signup {
@@ -81,4 +81,4 @@ class Signup {
   };
 }
 
-export default Signup;
+module.exports = Signup;

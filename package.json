@@ -1,0 +1,19 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "Nodejs Application and Vuejs, with pipeline of CI / CD using Jenkins, and Deployed backend on Amazon ECS with Docker, and Frontend on AWS Beanstalk.<br>\r For Database, it will be used MongoDB.<br>\r Will be used too Amazon ElastiCache for Redis, for saving Session User.<br>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
     agent any
     environment {
@@ -14,3 +15,6 @@ registryCredential = "demo-admin-user"
     }
     
 }
+=======
+teste
+>>>>>>> 9c169852dec20ac08d9b008509fb6413c7130ff6

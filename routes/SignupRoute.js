@@ -1,5 +1,5 @@
-import express from "express";
-import Signup from "../src/signup.js";
+const express = require("express");
+const Signup = require("../apps/signup");
 
 const router = express
   .Router()
@@ -9,4 +9,4 @@ const router = express
   .put("/users/:id", Signup.userUpdate)
   .delete("/users/:id", Signup.userDelete);
 
-export default router;
+module.exports = router;
