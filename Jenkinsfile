@@ -4,10 +4,10 @@ pipeline {
         AWS_ACCOUNT_ID="AKIA2WM2VTQS6XBRYO6S"
 	AWS_DEFAULT_REGION="sa-east-1"
 	CLUSTER_NAME="default"
-	SERVICE_NAME="timer"
+	SERVICE_NAME="timerapp-service"
 	TASK_DEFINITION_NAME="first-pipe"
 	DESIRED_COUNT="1"
-	IMAGE_REPO_NAME="demo"
+	IMAGE_REPO_NAME="735300656165.dkr.ecr.sa-east-1.amazonaws.com/timerapp"
 	IMAGE_TAG="${env.BUILD_ID}"
 	REPOSITORY_URI = “${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}”
 	registryCredential = "demo-admin-user"
